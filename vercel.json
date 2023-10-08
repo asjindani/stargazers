@@ -1,5 +1,18 @@
 {
+    "functions": {
+      "api/*.php": {
+        "runtime": "vercel-php@0.6.0"
+      }
+    },
     "routes": [
-      { "src": "/(.*)",  "dest": "/index.php" }
+      { "src": "/",  "dest": "/api/index.php" },
+      { "src": "/guide",  "dest": "/api/guide.php" },
+      { "src": "/planets",  "dest": "/api/planets.php" },
+      { "src": "/quiz",  "dest": "/api/quiz.php" },
+      { "src": "/spots",  "dest": "/api/spots.php" },
+      { "src": "/explore",  "dest": "/api/explore.php" },
+
+      { "src": "/static/index.css", "dest": "/static/index.css" },
+      { "src": "/static/app.js", "dest": "/static/app.js" }
     ]
   }
