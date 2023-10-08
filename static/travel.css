@@ -1,0 +1,30 @@
+/* p, h1, h2 {
+    margin-bottom: 0.5em;
+} */
+
+/* section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
+
+/* .landscape {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+} */
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.landscape {
+    border-radius: 10px;
+    height: 200px;
+    /* overflow: hidden; */
+    text-wrap: wrap;
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+}

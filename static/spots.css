@@ -1,0 +1,47 @@
+#planets {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planet {
+  flex-basis: calc(33.33333% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #222;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-column: span 2;
+}
+
+.planet .img {
+  height: 200px;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.planet .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  text-wrap: wrap;
+}
+
+.planet .content p {
+  margin-bottom: 60px;
+}
+
+.planet .content h1 {
+  margin-bottom: 5px;
+}
+
+.planet .button {
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: 10px;
+}

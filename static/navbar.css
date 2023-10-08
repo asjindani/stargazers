@@ -1,0 +1,72 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #222;
+    padding: var(--spacing);
+}
+
+nav #branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #branding img:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+nav img {
+    /* ICON */
+    width: 50px;
+}
+
+nav #tabs {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+nav #tabs a, nav #explore, .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    height: 50px;
+    width: 100px;
+}
+
+nav #tabs a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+nav #tabs a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav #explore, .button {
+    border-radius: 5px;
+}
+
+nav #tabs a:hover, nav #explore:hover, .button:hover {
+    background-color: var(--theme);
+}
+
+nav #tabs a.active, .button.active {
+    background-color: var(--theme);
+}
+
+nav #tabs a:hover, .button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-link, .button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
