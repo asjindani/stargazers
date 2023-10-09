@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Nunito:wght@100;300;400;500;700;900&display=swap');
-@import url('style.css');
 @import url('navbar.css');
-@import url('travel.css');
 @import url('spots.css');
 
 :root {
@@ -21,6 +18,28 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 14px;
+}
+
+main pre {
+    text-wrap: wrap;
+    font-size: 20px;
+}
+
+main {
+    display: block;
+    padding: var(--spacing);
+    background-color: black;
+    min-height: calc(100vh - 70px);
+}
+
+footer {
+    color: white;
+    background-color: #333;
+    padding: var(--spacing);
+}
+
+hr {
+    background-color: white;
 }
 
 div section {
